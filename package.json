@@ -1,0 +1,17 @@
+{
+  "name": "pucaci-web",
+  "version": "1.0.0",
+  "description": "Website Resmi & Demo Download Game PUCACI (Co-op Horor-Komedi Kampung)",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "pucaci",
+    "horror-game",
+    "indonesia",
+    "unity",
+    "coop-game"
+  ],
+  "author": "Musa Habibulloh Al Faruq, Achmad Aryo Sangkelad, Bachtiar Julianandi, Adinda Gisha Maulidah",
+  "license": "MIT"
+}
