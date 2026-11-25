@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUCACI - Game Co-op Horor-Komedi Kampung</title>
+    <meta name="description" content="PUCACI adalah game multiplayer horor-komedi kooperatif dengan latar perkampungan Indonesia. Bekerja sama sebagai warga ronda malam atau menyusup sebagai Kuntilanak.">
+    <meta name="keywords" content="Pucaci, Game Horor Indonesia, Co-op Multiplayer, Kuntilanak, Game Komedi, Unity Indie Game">
+    
+    <!-- Open Graph / Meta Sosial -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PUCACI - Game Co-op Horor-Komedi Kampung">
+    <meta property="og:description" content="Download demo game PUCACI! Multiplayer co-op horor-komedi dengan 3D Proximity Voice Chat & Impostor Kuntilanak.">
+    <meta property="og:image" content="images/hero-bg.png">
+    
+    <!-- Google Fonts: Cinzel (Prestigious Game Studio Serif) & Plus Jakarta Sans (Clean Modern Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="game-studio-theme">
+    <!-- Atmospheric Ambient Mist & Vignette Layers -->
+    <div class="mist-layer mist-top"></div>
+    <div class="mist-layer mist-bottom"></div>
+
+    <!-- Top Decorative Bar & Navigation (Faëria Style) -->
+    <header class="studio-header" id="studioHeader">
+        <div class="header-top-ribbon">
+            <div class="ribbon-container">
+                <span class="ribbon-text">OFFICIAL STANDALONE BUILD • WINDOWS PC DEMO</span>
+                <div class="ribbon-meta">
+                    <span class="meta-item"><i data-lucide="shield-check"></i> VERIFIED BUILD v1.0</span>
+                    <span class="meta-item"><i data-lucide="users"></i> 4 PLAYERS CO-OP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-nav-bar">
+            <div class="nav-container">
+                <a href="#hero" class="game-brand">
+                    <span class="brand-crest"><i data-lucide="ghost"></i></span>
+                    <span class="brand-title">PUCACI</span>
+                </a>
+
+                <nav class="game-nav-links">
+                    <a href="#tentang" class="game-nav-link">Tentang</a>
+                    <a href="#cara-main" class="game-nav-link">Cara Main</a>
+                    <a href="#karakter" class="game-nav-link">Karakter</a>
+                    <a href="#fitur" class="game-nav-link">Fitur Game</a>
+                    <a href="#galeri" class="game-nav-link">Galeri</a>
+                    <a href="#spesifikasi" class="game-nav-link">Spesifikasi</a>
+                </nav>
+
+                <div class="nav-cta-wrapper">
+                    <a href="#download" class="btn-gold-nav">
+                        <span>UNDUH DEMO</span>
+                    </a>
+                </div>
+
+                <button class="mobile-toggle" id="menuToggle" aria-label="Menu Navigasi">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+        <nav class="mobile-links">
+            <a href="#tentang" class="mobile-link">Tentang Game</a>
+            <a href="#cara-main" class="mobile-link">Cara Main</a>
+            <a href="#karakter" class="mobile-link">Daftar Karakter</a>
+            <a href="#fitur" class="mobile-link">Fitur Unggulan</a>
+            <a href="#galeri" class="mobile-link">Galeri Pratinjau</a>
+            <a href="#spesifikasi" class="mobile-link">Spesifikasi Sistem</a>
+            <a href="#download" class="mobile-link mobile-btn-dl">Unduh Game Demo (Gratis)</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section (Faëria Style: Logo & Golden CTA Left, Fanned Cards with Trailer Center-Right) -->
+    <section class="hero-studio-section" id="hero">
+        <div class="hero-bg-canvas"></div>
+        <div class="hero-container">
+            <!-- Left Column: Title, Subtitle, Golden CTA -->
+            <div class="hero-left-col">
+                <div class="hero-title-group">
+                    <h1 class="game-main-logo">PUCACI</h1>
+                    <div class="game-sub-filigree">
+                        <span class="filigree-line"></span>
+                        <span class="filigree-text">CO-OP HORROR-COMEDY KAMPUNG</span>
+                        <span class="filigree-line"></span>
+                    </div>
+                </div>
+
+                <p class="hero-synopsis">
+                    Bertahan hidup bersama warga ronda malam di Desa Sukamaju, atau menyusup diam-diam sebagai <b>Kuntilanak</b> dalam perburuan deduksi sosial multiplayer yang mencekam sekaligus menghibur.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#download" class="btn-gold-large">
+                        <span class="btn-gold-inner">
+                            <span class="btn-gold-title">UNDUH DEMO GRATIS</span>
+                            <span class="btn-gold-sub">WINDOWS PC • VERSI 1.0</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="hero-highlights-row">
+                    <div class="highlight-chip">
+                        <i data-lucide="mic"></i>
+                        <span>3D Proximity Voice Chat</span>
+                    </div>
+                    <div class="highlight-chip">
+                        <i data-lucide="eye-off"></i>
+                        <span>Mekanik Penyamaran [X]</span>
+                    </div>
+                    <div class="highlight-chip">
+                        <i data-lucide="sparkles"></i>
+                        <span>Unity URP Cel-Shading</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: "Apa itu PUCACI?" (Faëria "What's Faëria?" Layout: Fanned 3D Cards Left, Text Right) -->
+    <section class="studio-section" id="tentang">
+        <div class="section-ornament">
+            <span class="ornament-gem"></span>
+        </div>
+
+        <div class="split-layout">
+            <!-- Left: Fanned Character Cards (Interactive Deck) -->
+            <div class="split-col-visual">
+                <div class="character-deck-showcase">
+                    <div class="deck-card deck-card-1" title="Pak Mamat - Tetua Ronda">
+                        <div class="card-art-box">
+                            <img src="images/screenshot-characters.png" alt="Pak Mamat">
+                            <div class="card-frame-trim"></div>
+                        </div>
+                        <div class="card-meta-plate">
+                            <span class="plate-title">Pak Mamat</span>
+                            <span class="plate-role">Ketua Ronda</span>
+                        </div>
+                    </div>
+
+                    <div class="deck-card deck-card-2" title="Vincent - Pemuda Cepat">
+                        <div class="card-art-box">
+                            <img src="images/screenshot-characters.png" alt="Vincent">
+                            <div class="card-frame-trim"></div>
+                        </div>
+                        <div class="card-meta-plate">
+                            <span class="plate-title">Vincent</span>
+                            <span class="plate-role">Eksplorasi</span>
+                        </div>
+                    </div>
+
+                    <div class="deck-card deck-card-3 active-deck-card" title="Mbak Kunti - Impostor">
+                        <div class="card-art-box">
+                            <img src="images/screenshot-hud.png" alt="Kuntilanak Impostor">
+                            <div class="card-frame-trim frame-gold"></div>
+                        </div>
+                        <div class="card-meta-plate plate-featured">
+                            <span class="plate-title">Kuntilanak</span>
+                            <span class="plate-role">Sang Impostor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Elegant Typography Storytelling -->
+            <div class="split-col-info">
+                <span class="eyebrow-text">SINOPSIS & DINAMIKA PERMAINAN</span>
+                <h2 class="studio-heading">Apa itu PUCACI?</h2>
+                <p class="studio-paragraph">
+                    <b>PUCACI</b> adalah game horor-komedi kooperatif 4 pemain yang berlatar di perkampungan malam Indonesia. Malam ini giliran ronda Desa Sukamaju menjadi petaka ketika sesajen terlarang tersebar dan arwah pohon beringin mulai merasuki salah satu warga.
+                </p>
+                <p class="studio-paragraph">
+                    Pemain terbagi menjadi dua peran berlawanan: <b>Tim Warga</b> yang harus saling menjaga, membersihkan sesajen, dan menghidupkan gardu sekring desa, serta <b>Kuntilanak</b> yang menyamar persis seperti salah satu warga untuk menyabotase rombongan dari dalam.
+                </p>
+
+                <div class="feature-bullets-list">
+                    <div class="bullet-item">
+                        <div class="bullet-icon"><i data-lucide="radio"></i></div>
+                        <div class="bullet-desc">
+                            <strong>3D Proximity Voice Chat</strong>
+                            <p>Komunikasi suara berdasarkan jarak fisik di dalam game—jeritan kepanikan di lorong gelap terdengar sangat nyata.</p>
+                        </div>
+                    </div>
+
+                    <div class="bullet-item">
+                        <div class="bullet-icon"><i data-lucide="user-x"></i></div>
+                        <div class="bullet-desc">
+                            <strong>Mekanik Penyamaran [X]</strong>
+                            <p>Kuntilanak dapat meniru wujud visual warga mana pun seketika untuk mengecoh rekan dan memecah kelompok.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-link-wrap">
+                    <a href="#karakter" class="gold-text-link">
+                        <span>LIHAT SEMUA KARAKTER</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: "Bagaimana Cara Bermain?" (Faëria "How to Play?" Layout: Text Left, Framed Board Right) -->
+    <section class="studio-section bg-shadow-layer" id="cara-main">
+        <div class="section-ornament">
+            <span class="ornament-gem"></span>
+        </div>
+
+        <div class="split-layout reverse-on-desktop">
+            <!-- Right: Ornate Framed Gameplay Viewport -->
+            <div class="split-col-visual">
+                <div class="ornate-board-frame" onclick="openLightbox('images/screenshot-gameplay.png', 'Eksplorasi Perkampungan Malam Hari di PUCACI')">
+                    <div class="frame-corner corner-tl"></div>
+                    <div class="frame-corner corner-tr"></div>
+                    <div class="frame-corner corner-bl"></div>
+                    <div class="frame-corner corner-br"></div>
+                    
+                    <div class="frame-inner-media">
+                        <img src="images/screenshot-gameplay.png" alt="Cuplikan Gameplay Pucaci" loading="lazy">
+                        <div class="board-play-button">
+                            <i data-lucide="play"></i>
+                        </div>
+                        <div class="frame-caption-tag">
+                            <span>Eksplorasi Lorong Kampung • Tekan [V] Voice Chat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left: Steps & Instructions -->
+            <div class="split-col-info">
+                <span class="eyebrow-text">PANDUAN MULAI CEPAT</span>
+                <h2 class="studio-heading">Bagaimana Cara Bermain?</h2>
+                <p class="studio-paragraph">
+                    Game berjalan secara portabel tanpa instalasi rumit. Cukup hubungkan komputer Windows Anda dan rekan dalam satu jaringan Wi-Fi/LAN yang sama atau gunakan VPN virtual (Radmin / Hamachi / ZeroTier).
+                </p>
+
+                <div class="game-steps-column">
+                    <div class="game-step-row">
+                        <span class="step-numeral">I</span>
+                        <div class="step-content">
+                            <h4>Unduh & Ekstrak File</h4>
+                            <p>Download arsip <code>Pucaci-v1.0-Windows.zip</code> (~76.8 MB) dan ekstrak foldernya di PC.</p>
+                        </div>
+                    </div>
+
+                    <div class="game-step-row">
+                        <span class="step-numeral">II</span>
+                        <div class="step-content">
+                            <h4>Jalankan Pucaci.exe</h4>
+                            <p>Buka berkas permainan dan pilih karakter warga yang diinginkan di menu utama.</p>
+                        </div>
+                    </div>
+
+                    <div class="game-step-row">
+                        <span class="step-numeral">III</span>
+                        <div class="step-content">
+                            <h4>Host atau Join Room</h4>
+                            <p>Satu pemain klik <b>Host Room</b>, pemain lain memasukkan alamat IP Host lalu klik <b>Gabung</b>.</p>
+                        </div>
+                    </div>
+
+                    <div class="game-step-row">
+                        <span class="step-numeral">IV</span>
+                        <div class="step-content">
+                            <h4>Mulai Ronda Malam</h4>
+                            <p>Tahan tombol <b>[V]</b> untuk Push-To-Talk Voice Chat, <b>[X]</b> untuk menyamar, dan <b>[ESC]</b> untuk opsi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-link-wrap">
+                    <a href="#download" class="gold-text-link">
+                        <span>UNDUH SEKARANG (SIAP MAIN)</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Panoramic Showcase / Game Dynamics (Faëria Panoramic Board View) -->
+    <section class="studio-section panoramic-section" id="fitur">
+        <div class="section-ornament">
+            <span class="ornament-gem"></span>
+        </div>
+
+        <div class="section-centered-header">
+            <span class="eyebrow-text">FITUR UNGGULAN</span>
+            <h2 class="studio-heading">Dinamika Permainan & Atmosfer</h2>
+            <p class="studio-paragraph max-width-center">
+                Diproduksi dengan Unity 2022 LTS dan Universal Render Pipeline (URP), menghadirkan visual kartun ber-outline tebal yang ringan namun sarat atmosfer malam pedesaan.
+            </p>
+        </div>
+
+        <!-- Panoramic Framed Viewport -->
+        <div class="panoramic-viewport">
+            <div class="panoramic-frame">
+                <div class="frame-corner corner-tl"></div>
+                <div class="frame-corner corner-tr"></div>
+                <div class="frame-corner corner-bl"></div>
+                <div class="frame-corner corner-br"></div>
+
+                <img src="images/screenshot-hud.png" alt="Antarmuka HUD dan Penyamaran Pucaci" class="panoramic-image" loading="lazy">
+                
+                <div class="panoramic-overlay">
+                    <div class="panoramic-callout callout-1">
+                        <span class="callout-badge"><i data-lucide="mic"></i> 3D VOICE CHAT</span>
+                        <p>Jarak menentukan volume suara teman di kegelapan.</p>
+                    </div>
+
+                    <div class="panoramic-callout callout-2">
+                        <span class="callout-badge"><i data-lucide="user-x"></i> TOMBOL [X]</span>
+                        <p>Menu cepat penyamaran wujud Kuntilanak.</p>
+                    </div>
+
+                    <div class="panoramic-callout callout-3">
+                        <span class="callout-badge"><i data-lucide="zap-off"></i> SABOTASE LISTRIK</span>
+                        <p>Padamkan gardu desa untuk memicu kepanikan massal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Key Feature Pillars -->
+        <div class="feature-pillars-grid">
+            <div class="pillar-card">
+                <div class="pillar-icon"><i data-lucide="radio"></i></div>
+                <h4>3D Proximity Audio</h4>
+                <p>Suara teman mengecil saat mereka menjauh dan membesar saat mendekat. Jeritan saat dikejar terasa realistis.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon"><i data-lucide="flame"></i></div>
+                <h4>Objektif Sesajen URP</h4>
+                <p>Temukan dan bersihkan sesajen berasap mistis di berbagai sudut pekarangan desa sebelum malam larut.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon"><i data-lucide="palette"></i></div>
+                <h4>Visual Cel-Shading</h4>
+                <p>Gaya gambar kartunis dengan garis luar tegas menciptakan perpaduan estetika horor dan komedi yang unik.</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon"><i data-lucide="sliders"></i></div>
+                <h4>Pengaturan Fleksibel [ESC]</h4>
+                <p>Kustomisasi volume kanal audio (Master, Musik, SFX), sensitivitas mouse, kualitas grafis, dan mode layar penuh.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Galeri Tangkapan Layar (Ornate Gallery Grid) -->
+    <section class="studio-section bg-shadow-layer" id="galeri">
+        <div class="section-ornament">
+            <span class="ornament-gem"></span>
+        </div>
+
+        <div class="section-centered-header">
+            <span class="eyebrow-text">DOKUMENTASI GAMEPLAY</span>
+            <h2 class="studio-heading">Tangkapan Layar In-Game</h2>
+            <p class="studio-paragraph max-width-center">
+                Pratinjau visual langsung dari build resmi PUCACI v1.0. Klik gambar untuk melihat pratinjau penuh.
+            </p>
+        </div>
+
+        <div class="studio-gallery-grid">
+            <div class="studio-gallery-card" onclick="openLightbox('images/hero-bg.png', 'Tampilan Main Menu & Pos Ronda Desa Sukamaju')">
+                <div class="gallery-card-frame">
+                    <img src="images/hero-bg.png" alt="Main Menu Pucaci" loading="lazy">
+                    <div class="gallery-zoom-overlay">
+                        <i data-lucide="maximize-2"></i>
+                    </div>
+                </div>
+                <div class="gallery-card-plate">
+                    <h4>Main Menu & Pos Ronda</h4>
+                    <span>Suasana desa malam hari sebelum ronda dimulai</span>
+                </div>
+            </div>
+
+            <div class="studio-gallery-card" onclick="openLightbox('images/screenshot-gameplay.png', 'Eksplorasi Perkampungan Malam Hari')">
+                <div class="gallery-card-frame">
+                    <img src="images/screenshot-gameplay.png" alt="Eksplorasi Perkampungan" loading="lazy">
+                    <div class="gallery-zoom-overlay">
+                        <i data-lucide="maximize-2"></i>
+                    </div>
+                </div>
+                <div class="gallery-card-plate">
+                    <h4>Eksplorasi Perkampungan</h4>
+                    <span>Pencahayaan senter dinamis di lorong desa</span>
+                </div>
+            </div>
+
+            <div class="studio-gallery-card" onclick="openLightbox('images/screenshot-characters.png', 'Menu Pemilihan Karakter Warga')">
+                <div class="gallery-card-frame">
+                    <img src="images/screenshot-characters.png" alt="Pemilihan Karakter" loading="lazy">
+                    <div class="gallery-zoom-overlay">
+                        <i data-lucide="maximize-2"></i>
+                    </div>
+                </div>
+                <div class="gallery-card-plate">
+                    <h4>Roster Karakter Warga</h4>
+                    <span>Pak Mamat, Vincent, Rocky, dan Laras</span>
+                </div>
+            </div>
+
+            <div class="studio-gallery-card" onclick="openLightbox('images/screenshot-hud.png', 'HUD Permainan & Menu Penyamaran Impostor')">
+                <div class="gallery-card-frame">
+                    <img src="images/screenshot-hud.png" alt="HUD & Penyamaran" loading="lazy">
+                    <div class="gallery-zoom-overlay">
+                        <i data-lucide="maximize-2"></i>
+                    </div>
+                </div>
+                <div class="gallery-card-plate">
+                    <h4>HUD & Menu Penyamaran [X]</h4>
+                    <span>Antarmuka inventaris dan pilihan morphing</span>
+                </div>
+            </div>
+
+            <div class="studio-gallery-card" onclick="openLightbox('images/screenshot-sesajen.png', 'Objektif Ritual Sesajen dengan Partikel Asap URP')">
+                <div class="gallery-card-frame">
+                    <img src="images/screenshot-sesajen.png" alt="Objektif Sesajen" loading="lazy">
+                    <div class="gallery-zoom-overlay">
+                        <i data-lucide="maximize-2"></i>
+                    </div>
+                </div>
+                <div class="gallery-card-plate">
+                    <h4>Objektif Ritual Sesajen</h4>
+                    <span>Partikel asap kemenyan yang harus dibersihkan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Karakter Warga (Faëria Character Gallery) -->
+    <section class="studio-section" id="karakter">
+        <div class="section-ornament">
+            <span class="ornament-gem"></span>
+        </div>
+
+        <div class="section-centered-header">
+            <span class="eyebrow-text">KONTINGEN RONDA DESA</span>
+            <h2 class="studio-heading">Daftar Karakter Permainan</h2>
+            <p class="studio-paragraph max-width-center">
+                Setiap pemain dapat memilih karakter warga favoritnya saat berada di lobi room permainan.
+            </p>
+        </div>
+
+        <div class="characters-ornate-grid">
+            <div class="char-ornate-card">
+                <div class="char-crest"><i data-lucide="compass"></i></div>
+                <span class="char-tier">Ketua Ronda</span>
+                <h3>Pak Mamat</h3>
+                <p>Sesepuh kampung yang paling hafal seluruh sudut dan jalan pintas desa. Dilengkapi senter sorot berjarak jauh.</p>
+                <div class="char-stat-plate">
+                    <span>Peran:</span> <strong>Navigasi & Panduan Area</strong>
+                </div>
+            </div>
+
+            <div class="char-ornate-card">
+                <div class="char-crest"><i data-lucide="wind"></i></div>
+                <span class="char-tier">Pemuda Gesit</span>
+                <h3>Vincent</h3>
+                <p>Pemuda desa dengan kelincahan gerak tinggi, sangat efektif untuk menjangkau titik sesajen yang terisolasi.</p>
+                <div class="char-stat-plate">
+                    <span>Peran:</span> <strong>Eksplorasi Cepat</strong>
+                </div>
+            </div>
+
+            <div class="char-ornate-card">
+                <div class="char-crest"><i data-lucide="wrench"></i></div>
+                <span class="char-tier">Teknisi Desa</span>
+                <h3>Rocky</h3>
+                <p>Warga berbadan tegap yang bertanggung jawab memulihkan gardu sekring desa saat listrik disabotase.</p>
+                <div class="char-stat-plate">
+                    <span>Peran:</span> <strong>Perbaikan Kelistrikan</strong>
+                </div>
+            </div>
+
+            <div class="char-ornate-card">
+                <div class="char-crest"><i data-lucide="search"></i></div>
+                <span class="char-tier">Pengamat Teliti</span>
+                <h3>Laras</h3>
+                <p>Warga yang memiliki kejelian tinggi dalam mendeteksi keberadaan asap sesajen serta kejanggalan rekan tim.</p>
+                <div class="char-stat-plate">
+                    <span>Peran:</span> <strong>Deteksi & Pengawasan</strong>
+                </div>
+            </div>
+
+            <!-- Featured Impostor Card -->
+            <div class="char-ornate-card card-kunti-featured">
+                <div class="char-crest crest-red"><i data-lucide="ghost"></i></div>
+                <span class="char-tier tier-red">Sang Impostor</span>
+                <h3>Kuntilanak</h3>
+                <p>Arwah penunggu pohon beringin yang menyusup ke tengah warga. Mampu menyamar [X], mematikan gardu listrik, dan mengeliminasi warga yang tersesat di kegelapan.</p>
+                <div class="char-stat-plate plate-red">
+                    <span>Kemampuan:</span> <strong>Morphing Warga [X] & Sabotase Gardu</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Spesifikasi Sistem PC -->
+    <section class="studio-section bg-shadow-layer" id="spesifikasi">
+        <div class="section-ornament">
+            <span class="ornament-gem"></span>
+        </div>
+
+        <div class="section-centered-header">
+            <span class="eyebrow-text">KEBUTUHAN SISTEM PC</span>
+            <h2 class="studio-heading">Spesifikasi Komputer PC</h2>
+            <p class="studio-paragraph max-width-center">
+                PUCACI dioptimasi secara spesifik agar dapat dimainkan dengan lancar pada laptop harian hingga komputer desktop.
+            </p>
+        </div>
+
+        <div class="studio-specs-table-box">
+            <table class="studio-specs-table">
+                <thead>
+                    <tr>
+                        <th>Komponen</th>
+                        <th>Spesifikasi Minimum</th>
+                        <th>Spesifikasi Rekomendasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Sistem Operasi</b></td>
+                        <td>Windows 10 / 11 (64-bit)</td>
+                        <td>Windows 10 / 11 (64-bit)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Prosesor (CPU)</b></td>
+                        <td>Intel Core i3-4150 / AMD FX-6300</td>
+                        <td>Intel Core i5-8400 / AMD Ryzen 5 2600</td>
+                    </tr>
+                    <tr>
+                        <td><b>Memori (RAM)</b></td>
+                        <td>4 GB RAM</td>
+                        <td>8 GB RAM atau lebih tinggi</td>
+                    </tr>
+                    <tr>
+                        <td><b>Kartu Grafis (GPU)</b></td>
+                        <td>Intel HD Graphics 4000 / NVIDIA GT 730</td>
+                        <td>NVIDIA GTX 1050 Ti / AMD RX 560</td>
+                    </tr>
+                    <tr>
+                        <td><b>DirectX</b></td>
+                        <td>Versi 11</td>
+                        <td>Versi 11 / 12</td>
+                    </tr>
+                    <tr>
+                        <td><b>Penyimpanan</b></td>
+                        <td>300 MB ruang kosong</td>
+                        <td>500 MB ruang kosong (SSD)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Section 7: Download Box (Faëria Bottom Beta Sign-up / CTA Banner) -->
+    <section class="studio-section download-banner-section" id="download">
+        <div class="download-banner-container">
+            <div class="banner-top-ornament">
+                <span class="ornament-gem"></span>
+            </div>
+
+            <h2 class="download-banner-title">Unduh Demo Resmi PUCACI</h2>
+            <p class="download-banner-sub">
+                Paket instalasi mandiri Windows PC. Tanpa instalasi tambahan, cukup ekstrak berkas dan mainkan bersama rekan satu jaringan.
+            </p>
+
+            <div class="download-boxes-grid">
+                <!-- Package 1: Full Game ZIP -->
+                <div class="download-gold-card card-featured">
+                    <div class="gold-card-header">
+                        <span class="gold-badge">REKOMENDASI UTAMA</span>
+                        <h3>Paket Lengkap Game (ZIP)</h3>
+                        <span class="gold-meta">Ukuran Berkas: ~76.8 MB • Versi 1.0</span>
+                    </div>
+                    <p class="gold-card-body">
+                        Berisi berkas eksekusi <b>Pucaci.exe</b> beserta seluruh direktori aset data permainan. Cukup ekstrak berkas ZIP dan langsung mainkan.
+                    </p>
+                    <a href="downloads/Pucaci-v1.0-Windows.zip" download="Pucaci-v1.0-Windows.zip" class="btn-gold-action" id="btnDownloadZip">
+                        <i data-lucide="download"></i>
+                        <span>DOWNLOAD ZIP (76.8 MB)</span>
+                    </a>
+                </div>
+
+                <!-- Package 2: Executable Only -->
+                <div class="download-gold-card">
+                    <div class="gold-card-header">
+                        <span class="gold-badge badge-secondary">PEMBARUAN BINER</span>
+                        <h3>Berkas Eksekusi Saja (EXE)</h3>
+                        <span class="gold-meta">Ukuran Berkas: ~666 KB • Versi 1.0</span>
+                    </div>
+                    <p class="gold-card-body">
+                        File eksekusi biner utama pengganti. Digunakan khusus apabila Anda sudah memiliki folder <code>Pucaci_Data</code> sebelumnya di komputer Anda.
+                    </p>
+                    <a href="downloads/Pucaci.exe" download="Pucaci.exe" class="btn-gold-action btn-gold-alt" id="btnDownloadExe">
+                        <i data-lucide="download"></i>
+                        <span>DOWNLOAD PUCACI.EXE</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="download-trust-notes">
+                <span><i data-lucide="shield-check"></i> 100% Aman & Terverifikasi Bebas Virus</span>
+                <span>•</span>
+                <span><i data-lucide="monitor"></i> Kompatibel Windows 10 & 11 (64-bit)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Faëria Bottom Brand & Credits) -->
+    <footer class="studio-footer">
+        <div class="footer-container">
+            <div class="footer-logo-center">
+                <span class="footer-brand-title">PUCACI</span>
+                <span class="footer-brand-sub">GAME CO-OP HOROR-KOMEDI KAMPUNG</span>
+            </div>
+
+            <div class="footer-links-row">
+                <a href="#tentang">Tentang</a>
+                <a href="#cara-main">Cara Main</a>
+                <a href="#karakter">Karakter</a>
+                <a href="#fitur">Fitur</a>
+                <a href="#galeri">Galeri</a>
+                <a href="#download">Unduh</a>
+            </div>
+
+            <div class="footer-bottom-info">
+                <p>&copy; 2026 PUCACI INDIE GAMES. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Screenshots -->
+    <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Tutup Pratinjau">&times;</button>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img src="" alt="Pratinjau Layar Pucaci" id="lightboxImg">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <!-- Download Toast Notification -->
+    <div class="studio-toast" id="downloadToast">
+        <div class="toast-crest">
+            <i data-lucide="check-circle-2"></i>
+        </div>
+        <div class="toast-info">
+            <strong id="toastTitle">Mengunduh Berkas...</strong>
+            <span id="toastMsg">Proses unduhan demo game telah dimulai.</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
